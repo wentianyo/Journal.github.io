@@ -62,7 +62,7 @@ let categories = [];
 let currentCategory = 0;
 
 function loadConfig() {
-  fetch('top.json')
+  fetch('http://api.wentianplay.com/api/bbs.json')
     .then(response => response.json())
     .then(data => {
       siteConfig = data;
