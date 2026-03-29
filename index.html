@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>文天玩WenTianPlay | 天彬学术期刊网</title>
+    <title>天彬学术期刊网</title>
     <style>
         * {
             margin: 0;
@@ -367,7 +367,7 @@
         // 应用站点配置
         function applySiteConfig() {
             document.title = siteConfig.siteName || '天彬学术期刊网';
-            document.getElementById('siteName').textContent = siteConfig.siteName || 天彬学术期刊网';
+            document.getElementById('siteName').textContent = siteConfig.siteName || '天彬学术期刊网';
 
             if (siteConfig.favicon) {
                 const link = document.createElement('link');
@@ -546,7 +546,7 @@
         function openMobileMenu() {
             const mobileMenu = document.getElementById('mobileMenu');
             const overlay = document.getElementById('mobileMenuOverlay');
-            
+
             mobileMenu.classList.add('active');
             overlay.classList.add('active');
         }
@@ -555,7 +555,7 @@
         function closeMobileMenu() {
             const mobileMenu = document.getElementById('mobileMenu');
             const overlay = document.getElementById('mobileMenuOverlay');
-            
+
             mobileMenu.classList.remove('active');
             overlay.classList.remove('active');
         }
@@ -609,13 +609,13 @@
         // DOM加载完成后初始化
         document.addEventListener('DOMContentLoaded', () => {
             console.log('DOM已加载，开始初始化...');
-            
+
             // 初始化事件监听
             initEventListeners();
-            
+
             // 加载站点配置
             loadSiteConfig();
-            
+
             // 确保移动菜单按钮在桌面端隐藏
             if (window.innerWidth > 768) {
                 document.getElementById('mobileMenuBtn').style.display = 'none';
