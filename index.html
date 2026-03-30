@@ -484,8 +484,8 @@
                 displayArticles(data);
             } catch (error) {
                 console.error('加载文章失败:', error);
-                container.innerHTML = '<div class="error-message">加载失败，3秒后重试...</div>';
-                setTimeout(() => loadSectionArticles(sectionIndex), 3000);
+                container.innerHTML = '<div class="error-message">加载失败，重试中...</div>';
+                setTimeout(() => loadSectionArticles(sectionIndex), 1000);
             }
         }
 
