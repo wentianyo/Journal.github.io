@@ -360,7 +360,7 @@
                 loadSectionArticles(currentSection);
             } catch (error) {
                 console.error('加载配置失败:', error);
-                setTimeout(loadSiteConfig, 3000);
+                setTimeout(loadSiteConfig, 1300);
             }
         }
 
@@ -485,7 +485,7 @@
             } catch (error) {
                 console.error('加载文章失败:', error);
                 container.innerHTML = '<div class="error-message">加载失败，重试中...</div>';
-                setTimeout(() => loadSectionArticles(sectionIndex), 1000);
+                setTimeout(() => loadSectionArticles(sectionIndex), 1300);
             }
         }
 
